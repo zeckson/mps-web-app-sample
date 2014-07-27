@@ -10,4 +10,5 @@ Example web application made in MPS 2.5
 # Usage:
 1. Open MPS project
 2. Goto Settings -> Path Variables -> add (Name: mps.webr-dnq, Value: <mps.webr-dnq> installation path)
-3. All is set, start hacking!
+3. Restart MPS
+4. All is set, start hacking!
