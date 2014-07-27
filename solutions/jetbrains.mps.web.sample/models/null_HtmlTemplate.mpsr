@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:8ee51013-5c45-483e-9367-c23e1327ae45(jetbrains.mps.web.sample.main)" content="root">
+  <persistence version="8" />
+  <import index="g15w" modelUID="r:da6483b0-ff12-4b51-a8d8-a0f7e08483f2(webr.templateLanguage.structure)" implicit="yes" />
+  <root type="g15w.HtmlTemplate" typeId="g15w.1163457496477" id="7068200837825552683" nodeInfo="ng">
+    <property name="componentName" nameId="g15w.1191486321682" value="&lt;undefined&gt;" />
+  </root>
+</model>
+

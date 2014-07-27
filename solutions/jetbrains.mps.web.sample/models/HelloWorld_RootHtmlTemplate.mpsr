@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:8ee51013-5c45-483e-9367-c23e1327ae45(jetbrains.mps.web.sample.main)" content="root">
+  <persistence version="8" />
+  <import index="g15w" modelUID="r:da6483b0-ff12-4b51-a8d8-a0f7e08483f2(webr.templateLanguage.structure)" implicit="yes" />
+  <import index="1rh8" modelUID="r:d55ef462-ccc0-43fa-b7cf-7cb0eb33dd74(jetbrains.mps.webr.baseTemplate.structure)" implicit="yes" />
+  <root type="g15w.RootHtmlTemplate" typeId="g15w.1197669692036" id="1032868160762346773" nodeInfo="ng">
+    <property name="templateName" nameId="1rh8.1181585218263" value="HelloWorld" />
+    <property name="componentName" nameId="g15w.1191486321682" value="HelloWorld" />
+    <property name="doNotLocalize" nameId="g15w.8830736055024599333" value="true" />
+    <node role="option" roleId="g15w.3217798665417909851" type="g15w.RootHtmlTemplateTransactionalOption" typeId="g15w.3217798665417942374" id="1032868160762346789" nodeInfo="ng" />
+  </root>
+</model>
+

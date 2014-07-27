@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:8ee51013-5c45-483e-9367-c23e1327ae45(jetbrains.mps.web.sample.main)" content="root">
+  <persistence version="8" />
+  <import index="oql5" modelUID="r:d4844e27-98d5-4d9f-8888-91fa75cdf5db(jetbrains.mps.webr.rpc.rest.structure)" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="yes" />
+  <root type="oql5.RestResource" typeId="oql5.6638825332373098797" id="7068200837825613049" nodeInfo="ng">
+    <node role="resourceMethod" roleId="oql5.4485220494061029166" type="oql5.ResourceMethod" typeId="oql5.2879579421936792744" id="7068200837825613056" nodeInfo="ng">
+      <node role="path" roleId="oql5.2879579421936944873" type="oql5.Path" typeId="oql5.2408385785070222166" id="7068200837825613057" nodeInfo="ng" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.Type" typeId="tpee.1068431790189" id="7068200837825613058" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7068200837825613059" nodeInfo="sn" />
+    </node>
+    <node role="path" roleId="oql5.2879579421936792274" type="oql5.Path" typeId="oql5.2408385785070222166" id="7068200837825613051" nodeInfo="ng">
+      <node role="token" roleId="oql5.2408385785070222167" type="oql5.ConstantPathToken" typeId="oql5.2879579421936037828" id="7068200837825613054" nodeInfo="ng">
+        <property name="value" nameId="oql5.4672829768466651792" value="messages" />
+      </node>
+    </node>
+  </root>
+</model>
+
