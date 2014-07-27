@@ -5,7 +5,7 @@ Example web application made in MPS 2.5
 
 # Requirements:
 1. JetBrains MPS 2.5
-2. webr-dnq lib
+2. webr-dnq lib (recommended to unpack it under: <project root>/deps)
 
 # Usage:
 1. Open MPS project
