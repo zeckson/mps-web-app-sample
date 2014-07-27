@@ -24,6 +24,8 @@
   <language namespace="a83c3bd0-2f7e-4ba1-8373-12d49e99f57e(jetbrains.mps.gtext)" />
   <devkit namespace="1325c007-40fb-43ad-91f4-a20c4ac28167(webr_languages)" />
   <import index="69fh" modelUID="r:9f4316a1-4bc9-4691-b28a-19b434b5a6b9(web.app.sample.sandbox.persistence)" version="-1" />
+  <import index="2ev6" modelUID="f:java_stub#de575869-2fd0-4777-ac70-81137b5e3b2b#jetbrains.exodus.env(jetbrains.exodus/jetbrains.exodus.env@java_stub)" version="-1" />
+  <import index="92py" modelUID="f:java_stub#fa115847-fdba-421e-90f4-a3e3b9d3c372#jetbrains.exodus.env(jetbrains.teamsys.dnq.openAPI/jetbrains.exodus.env@java_stub)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="g15w" modelUID="r:da6483b0-ff12-4b51-a8d8-a0f7e08483f2(webr.templateLanguage.structure)" version="5" implicit="yes" />
   <import index="tpjo" modelUID="r:00000000-0000-4000-0000-011c89590588(jetbrains.mps.xml.structure)" version="0" implicit="yes" />
@@ -42,6 +44,7 @@
   <import index="ie2r" modelUID="r:f445b203-80a4-439b-81f6-46572b14f40c(webr.javascript.structure)" version="3" implicit="yes" />
   <import index="nnl8" modelUID="r:df5f5b90-1f17-4b3e-9eff-e9d5dddb2357(webr.javascript.dhtml)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="tph7" modelUID="r:00000000-0000-4000-0000-011c89590527(jetbrains.springframework.configuration.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="bak7.Application" typeId="bak7.1166520340551" id="3674256961799722020">
       <property name="applicationName" nameId="bak7.1172104317232" value="WebAppSample" />
@@ -61,6 +64,13 @@
     </node>
     <node type="g15w.ClientSideController" typeId="g15w.1234526598193" id="3674256961799747926">
       <link role="template" roleId="g15w.1234526654530" targetNodeId="3674256961799722359" resolveInfo="MessageBoard_RootHtmlTemplate" />
+    </node>
+    <node type="op11.DatabaseConfiguration" typeId="op11.1170083316201" id="7149857847599037325">
+      <property name="name" nameId="tpck.1169194664001" value="exodus" />
+    </node>
+    <node type="g15w.Layout" typeId="g15w.1163464477059" id="7149857847599063517">
+      <property name="componentName" nameId="g15w.1191486321682" value="Main" />
+      <property name="templateName" nameId="1rh8.1181585218263" value="Main" />
     </node>
   </roots>
   <root id="3674256961799722020">
@@ -171,6 +181,15 @@
       </node>
     </node>
     <node role="option" roleId="g15w.3217798665417909851" type="g15w.RootHtmlTemplateTransactionalOption" typeId="g15w.3217798665417942374" id="3674256961799735795" />
+    <node role="layoutTemplateCall" roleId="g15w.1202513300266" type="g15w.LayoutTemplateCall" typeId="g15w.1204843060944" id="7149857847599082825">
+      <link role="template" roleId="1rh8.7291301525857529332" targetNodeId="7149857847599063517" />
+      <node role="templateArgument" roleId="1rh8.7291301525857529331" type="1rh8.TemplateArgument" typeId="1rh8.1181584369661" id="7149857847599094552">
+        <link role="templateParameterDeclaration" roleId="1rh8.1181584369662" targetNodeId="7149857847599063523" resolveInfo="title" />
+        <node role="actualArgument" roleId="1rh8.1181584369663" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7149857847599094554">
+          <property name="value" nameId="tpee.1070475926801" value="Message Board" />
+        </node>
+      </node>
+    </node>
   </root>
   <root id="3674256961799747906">
     <node role="contentList" roleId="g15w.1174836983657" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="3674256961799747907">
@@ -180,39 +199,53 @@
         <node role="content" roleId="aq00.1229528933336" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="3674256961799744751">
           <node role="content" roleId="tpjo.1163629255661" type="kyjh.ForEachLoop" typeId="kyjh.1172617063060" id="3674256961799744754">
             <node role="contentList" roleId="kyjh.1172617063062" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="3674256961799744755">
-              <node role="content" roleId="tpjo.1163629255661" type="aq00.HtmlSpanComponent" typeId="aq00.2281792783604107885" id="3674256961799744761">
+              <node role="content" roleId="tpjo.1163629255661" type="aq00.HtmlDivComponent" typeId="aq00.1231957657766" id="7149857847599125887">
                 <property name="componentName" nameId="g15w.1191486321682" value="&lt;undefined&gt;" />
-                <node role="content" roleId="aq00.1229528933336" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="3674256961799744765">
-                  <property name="isHorizontal" nameId="tpjo.1166231449055" value="true" />
-                  <node role="content" roleId="tpjo.1163629255661" type="tpjo.Text" typeId="tpjo.1161373262136" id="3674256961799744762">
-                    <property name="text" nameId="tpjo.1161373273669" value="Author: " />
-                  </node>
-                  <node role="content" roleId="tpjo.1163629255661" type="kyjh.DollarControl" typeId="kyjh.1172457006188" id="3674256961799744768">
-                    <node role="expression" roleId="kyjh.1172457006189" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3674256961799746482">
-                      <node role="operand" roleId="tpee.1197027771414" type="1rh8.LoopVariableReference" typeId="1rh8.1181660337658" id="3674256961799744770">
-                        <link role="loopVariable" roleId="1rh8.1181660337659" targetNodeId="3674256961799744759" resolveInfo="message" />
+                <node role="content" roleId="aq00.1229528933336" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="7149857847599125888">
+                  <node role="content" roleId="tpjo.1163629255661" type="aq00.HtmlSpanComponent" typeId="aq00.2281792783604107885" id="3674256961799744761">
+                    <property name="componentName" nameId="g15w.1191486321682" value="&lt;undefined&gt;" />
+                    <node role="content" roleId="aq00.1229528933336" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="3674256961799744765">
+                      <property name="isHorizontal" nameId="tpjo.1166231449055" value="true" />
+                      <node role="content" roleId="tpjo.1163629255661" type="tpjo.Text" typeId="tpjo.1161373262136" id="3674256961799744762">
+                        <property name="text" nameId="tpjo.1161373273669" value="Author: " />
                       </node>
-                      <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="3674256961799747821">
-                        <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="69fh.3674256961799744719" resolveInfo="author" />
+                      <node role="content" roleId="tpjo.1163629255661" type="kyjh.DollarControl" typeId="kyjh.1172457006188" id="3674256961799744768">
+                        <node role="expression" roleId="kyjh.1172457006189" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7149857847599127241">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3674256961799746482">
+                            <node role="operand" roleId="tpee.1197027771414" type="1rh8.LoopVariableReference" typeId="1rh8.1181660337658" id="3674256961799744770">
+                              <link role="loopVariable" roleId="1rh8.1181660337659" targetNodeId="3674256961799744759" resolveInfo="message" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="3674256961799747821">
+                              <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="69fh.3674256961799744719" resolveInfo="author" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="7149857847599127247">
+                            <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="69fh.3674256961799735813" resolveInfo="name" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="content" roleId="tpjo.1163629255661" type="tpjo.Text" typeId="tpjo.1161373262136" id="7149857847599127248">
+                        <property name="text" nameId="tpjo.1161373273669" value=":" />
                       </node>
                     </node>
+                    <node role="optionList" roleId="g15w.1171271421594" type="g15w.OptionList" typeId="g15w.1163544766280" id="3674256961799744763" />
+                  </node>
+                  <node role="content" roleId="tpjo.1163629255661" type="aq00.HtmlSpanComponent" typeId="aq00.2281792783604107885" id="3674256961799747823">
+                    <property name="componentName" nameId="g15w.1191486321682" value="&lt;undefined&gt;" />
+                    <node role="content" roleId="aq00.1229528933336" type="kyjh.DollarControl" typeId="kyjh.1172457006188" id="3674256961799747826">
+                      <node role="expression" roleId="kyjh.1172457006189" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3674256961799747845">
+                        <node role="operand" roleId="tpee.1197027771414" type="1rh8.LoopVariableReference" typeId="1rh8.1181660337658" id="3674256961799747828">
+                          <link role="loopVariable" roleId="1rh8.1181660337659" targetNodeId="3674256961799744759" resolveInfo="message" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="3674256961799747850">
+                          <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="69fh.3674256961799744729" resolveInfo="content" />
+                        </node>
+                      </node>
+                    </node>
+                    <node role="optionList" roleId="g15w.1171271421594" type="g15w.OptionList" typeId="g15w.1163544766280" id="3674256961799747825" />
                   </node>
                 </node>
-                <node role="optionList" roleId="g15w.1171271421594" type="g15w.OptionList" typeId="g15w.1163544766280" id="3674256961799744763" />
-              </node>
-              <node role="content" roleId="tpjo.1163629255661" type="aq00.HtmlSpanComponent" typeId="aq00.2281792783604107885" id="3674256961799747823">
-                <property name="componentName" nameId="g15w.1191486321682" value="&lt;undefined&gt;" />
-                <node role="content" roleId="aq00.1229528933336" type="kyjh.DollarControl" typeId="kyjh.1172457006188" id="3674256961799747826">
-                  <node role="expression" roleId="kyjh.1172457006189" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3674256961799747845">
-                    <node role="operand" roleId="tpee.1197027771414" type="1rh8.LoopVariableReference" typeId="1rh8.1181660337658" id="3674256961799747828">
-                      <link role="loopVariable" roleId="1rh8.1181660337659" targetNodeId="3674256961799744759" resolveInfo="message" />
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="3674256961799747850">
-                      <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="69fh.3674256961799744729" resolveInfo="content" />
-                    </node>
-                  </node>
-                </node>
-                <node role="optionList" roleId="g15w.1171271421594" type="g15w.OptionList" typeId="g15w.1163544766280" id="3674256961799747825" />
+                <node role="optionList" roleId="g15w.1171271421594" type="g15w.OptionList" typeId="g15w.1163544766280" id="7149857847599125889" />
               </node>
             </node>
             <node role="loopVariableDeclaration" roleId="1rh8.1181610712969" type="1rh8.LoopVariableDeclaration" typeId="1rh8.1181600434175" id="3674256961799744757">
@@ -500,6 +533,56 @@
     <node role="weavedRegs" roleId="g15w.1234973707443" type="ie2r.JsStatementList" typeId="ie2r.1183041653208" id="3674256961799747927" />
     <node role="weavedHandlers" roleId="g15w.6632384150484369102" type="ie2r.JsStatementList" typeId="ie2r.1183041653208" id="3674256961799747928" />
     <node role="statementList" roleId="g15w.1234526807822" type="ie2r.JsStatementList" typeId="ie2r.1183041653208" id="3674256961799747929" />
+  </root>
+  <root id="7149857847599037325">
+    <node role="dataFilesLocationValue" roleId="op11.3733671400973784217" type="tph7.SimpleValue" typeId="tph7.1170426318884" id="7149857847599037328">
+      <property name="value" nameId="tph7.1170426332760" value="${user.home}/.webapp" />
+    </node>
+    <node role="environment" roleId="op11.8660728392312266776" type="tph7.InnerBeanValue" typeId="tph7.1170683870454" id="7149857847599039004">
+      <node role="bean" roleId="tph7.1170683884815" type="tph7.Bean" typeId="tph7.1170060376956" id="7149857847599039005">
+        <node role="beanElement" roleId="tph7.1233754657572" type="tph7.BeanConstructor" typeId="tph7.1233757967585" id="7149857847599062468">
+          <node role="constructorArg" roleId="tph7.1233758120215" type="tph7.ConstructorArg" typeId="tph7.1170075959398" id="7149857847599062469">
+            <node role="value" roleId="tph7.1170426460087" type="tph7.SimpleValue" typeId="tph7.1170426318884" id="7149857847599062471">
+              <property name="value" nameId="tph7.1170426332760" value="${user.home}/.webapp" />
+            </node>
+          </node>
+        </node>
+        <node role="beanElement" roleId="tph7.1233754657572" type="tph7.FactoryClass" typeId="tph7.6583013364017247500" id="7149857847599054484">
+          <link role="classifier" roleId="tph7.6583013364017247503" targetNodeId="2ev6.~Environments" resolveInfo="Environments" />
+        </node>
+        <node role="beanElement" roleId="tph7.1233754657572" type="tph7.FactoryMethod" typeId="tph7.4786458834467240766" id="7149857847599054486">
+          <link role="factoryMethod" roleId="tph7.4786458834467240768" targetNodeId="2ev6.~Environments%dnewInstance(java%dlang%dString,java%dlang%dString,jetbrains%dexodus%denv%dEnvironmentConfig)%cjetbrains%dexodus%denv%dEnvironment" resolveInfo="newInstance" />
+        </node>
+        <node role="implementationClass" roleId="tph7.1174742653613" type="tph7.ClassifierTypeImplClass" typeId="tph7.1174742314508" id="7149857847599054487">
+          <node role="classifierType" roleId="tph7.1174742339373" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7149857847599054488">
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="92py.~Environment" resolveInfo="Environment" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7149857847599063517">
+    <node role="htmlDocument" roleId="g15w.1174852955061" type="g15w.HtmlDocument" typeId="g15w.1174851652833" id="7149857847599063518">
+      <node role="headControl" roleId="g15w.1174851666288" type="g15w.HeadElement" typeId="g15w.1172094213595" id="7149857847599063519">
+        <node role="title" roleId="g15w.1205369409052" type="kyjh.DollarControl" typeId="kyjh.1172457006188" id="7149857847599063525">
+          <node role="expression" roleId="kyjh.1172457006189" type="1rh8.TemplateParameterReference" typeId="1rh8.1181532398598" id="7149857847599063527">
+            <link role="templateParameterDeclaration" roleId="1rh8.1181532398599" targetNodeId="7149857847599063523" resolveInfo="title" />
+          </node>
+        </node>
+      </node>
+      <node role="body" roleId="g15w.1175544310074" type="g15w.Body" typeId="g15w.1175528273469" id="7149857847599063520">
+        <node role="contentList" roleId="g15w.1175528346450" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="7149857847599063521">
+          <node role="content" roleId="tpjo.1163629255661" type="g15w.HtmlIncludeControl" typeId="g15w.1182162251656" id="7149857847599117117">
+            <node role="templateCall" roleId="kyjh.1174168014688" type="g15w.NestedExpression" typeId="g15w.1163468595843" id="7149857847599117119" />
+          </node>
+        </node>
+        <node role="optionList" roleId="g15w.1171271421594" type="g15w.OptionList" typeId="g15w.1163544766280" id="7149857847599063522" />
+      </node>
+    </node>
+    <node role="templateParameterDeclaration" roleId="1rh8.1181585218264" type="1rh8.TemplateParameterDeclaration" typeId="1rh8.1181530684307" id="7149857847599063523">
+      <property name="name" nameId="tpck.1169194664001" value="title" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7149857847599063524" />
+    </node>
   </root>
 </model>
 

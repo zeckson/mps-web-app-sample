@@ -1,0 +1,18 @@
+<beans>
+  <bean id="modelMetaData" class="jetbrains.exodus.entitystore.metadata.ModelMetaDataImpl" init-method="init"></bean>
+  <bean id="initModelMetaData" class="web.app.sample.main.InitModelMetaDataServiceLocatorListener">
+    <property name="dependees">
+      <list></list>
+    </property>
+  </bean>
+  <bean id="extensionPoint_modelMetaData_entityMetaDatas" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="modelMetaData"/>
+    <property name="extensionPropertyName" value="entityMetaDatas"/>
+    <property name="extensionType" value="jetbrains.exodus.entitystore.metadata.EntityMetaData"/>
+  </bean>
+  <bean id="extensionPoint_modelMetaData_associationMetaDatas" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="modelMetaData"/>
+    <property name="extensionPropertyName" value="associationMetaDatas"/>
+    <property name="extensionType" value="jetbrains.exodus.entitystore.metadata.AssociationMetaData"/>
+  </bean>
+</beans>

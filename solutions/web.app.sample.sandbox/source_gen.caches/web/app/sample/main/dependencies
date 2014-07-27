@@ -23,10 +23,30 @@
     <classNode dependClassName="web.app.sample.main.Board_HtmlTemplateComponent" />
     <classNode extendsClassName="jetbrains.mps.webr.runtime.templateComponent.ITemplateFactory" />
   </dependency>
+  <dependency className="web.app.sample.main.InitModelMetaDataServiceLocatorListener" file="InitModelMetaDataServiceLocatorListener.java">
+    <classNode dependClassName="jetbrains.teamsys.dnq.runtime.util.DnqUtils" />
+    <classNode extendsClassName="jetbrains.springframework.configuration.runtime.ServiceLocatorAdapter" />
+  </dependency>
   <dependency className="web.app.sample.main.InitWebApplicationServiceLocatorListener" file="InitWebApplicationServiceLocatorListener.java">
     <classNode extendsClassName="jetbrains.springframework.configuration.runtime.ServiceLocatorAdapter" />
   </dependency>
   <dependency className="web.app.sample.main.JsDependenciesConfiguration" file="JsDependenciesConfiguration.xml" />
+  <dependency className="web.app.sample.main.Main_LayoutComponent" file="Main_LayoutComponent.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.webr.htmlComponent.runtime.HtmlComponentUtil" />
+    <classNode dependClassName="jetbrains.mps.webr.javascript.runtime.escape.JsStringUtil" />
+    <classNode dependClassName="jetbrains.mps.webr.runtime.requestProcessor.MimeType" />
+    <classNode dependClassName="jetbrains.mps.webr.runtime.templateComponent.LinkUtil" />
+    <classNode dependClassName="jetbrains.mps.webr.runtime.templateComponent.TemplateActionController" />
+    <classNode dependClassName="jetbrains.mps.webr.runtime.templateComponent.TemplateComponent" />
+    <classNode dependClassName="webr.framework.controller.BaseApplication" />
+    <classNode dependClassName="webr.framework.function.HtmlStringUtil" />
+    <classNode dependClassName="webr.framework.textBuilder.TBuilderContext" />
+    <classNode dependClassName="webr.framework.url.UrlUtil" />
+    <classNode extendsClassName="jetbrains.mps.webr.runtime.templateComponent.LayoutComponent" />
+  </dependency>
   <dependency className="web.app.sample.main.MessageBoard" file="MessageBoard.js" />
   <dependency className="web.app.sample.main.MessageBoard_RootHtmlTemplateComponent" file="MessageBoard_RootHtmlTemplateComponent.java">
     <classNode dependClassName="com.jetbrains.teamsys.dnq.association.DirectedAssociationSemantics" />
@@ -40,6 +60,7 @@
     <classNode dependClassName="jetbrains.exodus.query.PropertyEqual" />
     <classNode dependClassName="jetbrains.exodus.util.StringHashMap" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
     <classNode dependClassName="jetbrains.mps.webr.htmlComponent.runtime.HtmlComponentUtil" />
     <classNode dependClassName="jetbrains.mps.webr.runtime.component.HtmlTemplate" />
     <classNode dependClassName="jetbrains.mps.webr.runtime.requestProcessor.ResponseFactory" />
@@ -61,11 +82,17 @@
     <classNode extendsClassName="jetbrains.mps.webr.runtime.templateComponent.TemplateComponent" />
   </dependency>
   <dependency className="web.app.sample.main.MessageBoard_RootHtmlTemplateController" file="MessageBoard_RootHtmlTemplateController.java">
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
     <classNode dependClassName="jetbrains.mps.webr.runtime.templateComponent.ActionController" />
     <classNode dependClassName="jetbrains.mps.webr.runtime.templateComponent.ActionFactory" />
     <classNode dependClassName="jetbrains.mps.webr.runtime.templateComponent.IdParameter" />
+    <classNode dependClassName="jetbrains.mps.webr.runtime.templateComponent.LayoutComponent" />
     <classNode dependClassName="jetbrains.mps.webr.runtime.templateComponent.TemplateComponent" />
+    <classNode dependClassName="web.app.sample.main.Main_LayoutComponent" />
     <classNode dependClassName="web.app.sample.main.MessageBoard_RootHtmlTemplateComponent" />
     <classNode dependClassName="web.app.sample.main.StringUtils" />
     <classNode dependClassName="webr.framework.textBuilder.TBuilderContext" />
@@ -99,7 +126,9 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="web.app.sample.main.WebAppSampleLocalizationConfiguration" file="WebAppSampleLocalizationConfiguration.xml" />
+  <dependency className="web.app.sample.main.modelMetaDataConfiguration" file="modelMetaDataConfiguration.xml" />
   <dependency className="web.app.sample.main.rootTemplateControllerConfiguration" file="rootTemplateControllerConfiguration.xml" />
+  <dependency className="web.app.sample.main.storeConfigurationDatabase" file="storeConfigurationDatabase.xml" />
   <dependency className="web.app.sample.main.templateJsDependencyConfiguration" file="templateJsDependencyConfiguration.xml" />
   <dependency className="web.app.sample.main.web" file="web.xml" />
   <dependency className="web.app.sample.main.webConfiguration" file="webConfiguration.xml" />

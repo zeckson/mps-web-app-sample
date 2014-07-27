@@ -1,0 +1,43 @@
+<beans>
+  <bean id="transientEntityStore" class="com.jetbrains.teamsys.dnq.database.TransientEntityStoreImpl" destroy-method="close">
+    <property name="persistentStore">
+      <ref bean="persistentEntityStore"/>
+    </property>
+    <property name="flushRetryOnLockConflict">
+      <value>600</value>
+    </property>
+    <property name="modelMetaData">
+      <ref bean="modelMetaData"/>
+    </property>
+    <property name="queryEngine">
+      <ref bean="queryEngine"/>
+    </property>
+    <property name="eventsMultiplexer">
+      <ref bean="eventsMultiplexer"/>
+    </property>
+  </bean>
+  <bean id="persistentEntityStore" class="jetbrains.exodus.entitystore.PersistentEntityStoreImpl" destroy-method="close">
+    <constructor-arg index="0">
+      <bean factory-method="newInstance" class="jetbrains.exodus.env.Environments">
+        <constructor-arg index="0">
+          <value>${user.home}/.webapp</value>
+        </constructor-arg>
+      </bean>
+    </constructor-arg>
+    <constructor-arg index="1">
+      <value>exodus</value>
+    </constructor-arg>
+  </bean>
+  <bean id="queryEngine" class="jetbrains.teamsys.dnq.runtime.queries.TransientQueryEngine">
+    <constructor-arg index="0">
+      <ref bean="modelMetaData"/>
+    </constructor-arg>
+    <constructor-arg index="1">
+      <ref bean="persistentEntityStore"/>
+    </constructor-arg>
+    <property name="sortEngine">
+      <ref bean="sortEngine"/>
+    </property>
+  </bean>
+  <bean id="sortEngine" class="jetbrains.teamsys.dnq.runtime.queries.TransientSortEngine"></bean>
+</beans>

@@ -11,8 +11,8 @@ import jetbrains.mps.webr.htmlComponent.runtime.HtmlComponentUtil;
 import webr.framework.function.HtmlStringUtil;
 import jetbrains.exodus.entitystore.Entity;
 import jetbrains.teamsys.dnq.runtime.queries.QueryOperations;
-import com.jetbrains.teamsys.dnq.association.AssociationSemantics;
 import com.jetbrains.teamsys.dnq.association.PrimitiveAssociationSemantics;
+import com.jetbrains.teamsys.dnq.association.AssociationSemantics;
 
 public class Board_HtmlTemplateComponent extends TemplateComponent {
   public Board_HtmlTemplateComponent(TemplateComponent parentTemplateComponent, String templateName, Map<String, Object> templateParameters) {
@@ -61,13 +61,19 @@ public class Board_HtmlTemplateComponent extends TemplateComponent {
     builderContext.increaseIndent();
     for (Entity message : QueryOperations.queryGetAll("Message")) {
       builderContext.appendIndent();
+      builderContext.append("<div");
+      builderContext.append(">");
+      builderContext.appendNewLine();
+      builderContext.increaseIndent();
+      builderContext.appendIndent();
       builderContext.append("<span");
       builderContext.append(">");
       builderContext.appendNewLine();
       builderContext.increaseIndent();
       builderContext.appendIndent();
       builderContext.append("Author: ");
-      builderContext.append(HtmlStringUtil.html(AssociationSemantics.getToOne(message, "author")));
+      builderContext.append(HtmlStringUtil.html(PrimitiveAssociationSemantics.get(AssociationSemantics.getToOne(message, "author"), "name", String.class, null)));
+      builderContext.append(":");
       builderContext.appendNewLine();
       builderContext.decreaseIndent();
       builderContext.appendIndent();
@@ -78,6 +84,10 @@ public class Board_HtmlTemplateComponent extends TemplateComponent {
       builderContext.append(">");
       builderContext.append(HtmlStringUtil.html((PrimitiveAssociationSemantics.getBlobAsString(message, "content"))));
       builderContext.append("</span>");
+      builderContext.appendNewLine();
+      builderContext.decreaseIndent();
+      builderContext.appendIndent();
+      builderContext.append("</div>");
       builderContext.appendNewLine();
     }
     builderContext.decreaseIndent();

@@ -41,4 +41,25 @@
       <list></list>
     </property>
   </bean>
+  <bean class="jetbrains.mps.webr.runtime.templateComponent.TemplateDependency">
+    <property name="className">
+      <value>web.app.sample.main.Main_LayoutComponent</value>
+    </property>
+    <property name="factoryClassName">
+      <value>web.app.sample.main.Main_LayoutFactory</value>
+    </property>
+    <property name="name">
+      <value>Main</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="dependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>Webr.HeartBeat</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
 </beans>

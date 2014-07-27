@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-1x183tpe67m51zq40xou05ops8dl4wf">
+<dependencies version="2" modelHash="-1j49r34saq3ta3s5hb7s56exsl57lzw">
+  <dep model="f:java_stub#0bb13644-7e3f-4ed2-bea5-4425e3e12c0a#com.jetbrains.teamsys.dnq.database(jetbrains.teamsys.dnq.runtime/com.jetbrains.teamsys.dnq.database@java_stub)" />
   <dep model="f:java_stub#2e564b27-344e-442b-a964-61cc7150a033#freemarker.core(jetbrains.mps.webr.runtime.libs/freemarker.core@java_stub)" />
   <dep model="f:java_stub#2e564b27-344e-442b-a964-61cc7150a033#freemarker.template(jetbrains.mps.webr.runtime.libs/freemarker.template@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
@@ -18,13 +19,18 @@
   <dep model="f:java_stub#7a915f26-abf1-4709-86db-7e01c8f27411#webr.framework.url(jetbrains.mps.webr.runtime/webr.framework.url@java_stub)" />
   <dep model="f:java_stub#860d8c79-1694-4172-bbc6-d20f563c2dcb#jetbrains.springframework.configuration.runtime(jetbrains.mps.springframework.configuration.runtime/jetbrains.springframework.configuration.runtime@java_stub)" />
   <dep model="f:java_stub#d95e286a-03bd-41d2-a04d-9db8f070e89c#org.apache.commons.logging(jetbrains.mps.baseLanguage.logging#1167240554582/org.apache.commons.logging@java_stub)" />
+  <dep model="f:java_stub#de575869-2fd0-4777-ac70-81137b5e3b2b#jetbrains.exodus.env(jetbrains.exodus/jetbrains.exodus.env@java_stub)" />
+  <dep model="f:java_stub#e37a52fb-2509-48e9-b975-4564e1187eca#jetbrains.exodus.entitystore(jetbrains.dnq.persistentEntityStore/jetbrains.exodus.entitystore@java_stub)" />
+  <dep model="f:java_stub#e37a52fb-2509-48e9-b975-4564e1187eca#jetbrains.exodus.entitystore.metadata(jetbrains.dnq.persistentEntityStore/jetbrains.exodus.entitystore.metadata@java_stub)" />
   <dep model="f:java_stub#e37a52fb-2509-48e9-b975-4564e1187eca#jetbrains.exodus.query(jetbrains.dnq.persistentEntityStore/jetbrains.exodus.query@java_stub)" />
   <dep model="f:java_stub#fa115847-fdba-421e-90f4-a3e3b9d3c372#jetbrains.exodus.entitystore(jetbrains.teamsys.dnq.openAPI/jetbrains.exodus.entitystore@java_stub)" />
+  <dep model="f:java_stub#fa115847-fdba-421e-90f4-a3e3b9d3c372#jetbrains.exodus.entitystore.metadata(jetbrains.teamsys.dnq.openAPI/jetbrains.exodus.entitystore.metadata@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
@@ -34,6 +40,7 @@
   <dep model="r:00000000-0000-4000-0000-011c89590589(jetbrains.mps.xml.generator.baseLanguage.template.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c89590592(jetbrains.mps.xmlInternal.generator.baseLanguage.template.main@generator)" />
   <dep model="r:038370c6-82af-4f77-9b37-61e8812b25f6(jetbrains.mps.webr.runtime.js.event)" />
+  <dep model="r:0464a8da-e5e5-4cea-b341-9a434e5abf7a(jetbrains.mps.webr.runtime.js)" />
   <dep model="r:0987ca4c-8e04-4dbd-aaf1-78e2ab681986(jetbrains.mps.internationalization.configSchema)" />
   <dep model="r:0e4a1d80-dae7-44e7-8376-e648fc8ac876(jetbrains.mps.webr.baseTemplate.generator.baseLanguage.template.main@generator)" />
   <dep model="r:11f20562-e7cb-4eac-894a-461fa691a073(webr.templateLanguage.accessoryModel)" />
@@ -51,6 +58,7 @@
   <dep model="r:298508c6-09fe-4d9a-9ca5-76a5c106fce9(jetbrains.mps.webr.runtime.filter)" />
   <dep model="r:2a05f46d-aa86-4316-9295-80ff9bc870a5(webr.templateLanguage.generator.baseLanguage.template.main@generator)" />
   <dep model="r:2a71aaed-21c7-4624-8f79-2969ade37068(webr.javascript.global)" />
+  <dep model="r:359a61e9-f67c-46fc-bb8a-6be619ef2ffa(jetbrains.mps.webr.jquery)" />
   <dep model="r:36362ef4-5e1d-4026-bd6e-d33fae3b8979(jetbrains.mps.webr.baseTemplateInternal.generator.baseLanguage.template.main@generator)" />
   <dep model="r:37395298-2ece-4174-b204-aadbdacd22d3(jetbrains.mps.webr.component.structure)" />
   <dep model="r:3912e62d-2f1d-4fb6-b1cc-ba785fbd9573(jetbrains.teamsys.dnq.generator.baseLanguage.template.primitiveAssociations@generator)" />
@@ -58,8 +66,10 @@
   <dep model="r:4728c17a-5a1b-4bdd-989e-9fc77ffcd178(jetbrains.mps.webr.stateless.template.generator.template.resources@generator)" />
   <dep model="r:4f840970-79a5-407e-bc2e-95ad2a148c6c(jetbrains.mps.webr.wiki.precessor.lang.generator.template.main@generator)" />
   <dep model="r:514c90d9-0be3-41bd-b414-6a9681bdb4be(jetbrains.mps.webr.component.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:52b78949-f903-423d-b5fb-52b1172f3b42(webr.templateLanguage.generator.baseLanguage.template.weblStep@generator)" />
   <dep model="r:5335ed30-2fc9-4a96-b5b1-29521b82a8e0(jetbrains.teamsys.dnq.generator.baseLanguage.template.persistentClassAccess@generator)" />
   <dep model="r:550d83af-6cfc-4cb8-96bb-6333219bd555(jetbrains.mps.businessRules.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:5769c35a-2da5-47f2-873e-c9226162d463(jetbrains.teamsys.dnq.configSchema)" />
   <dep model="r:5f7481fa-9a3d-48f7-b2f0-9999b24e0d2c(webr.webl.generator.baseLanguage.template.contentExpression@generator)" />
   <dep model="r:6c36aebc-8e34-4775-88b6-34c1fa8ee6aa(jetbrains.teamsys.dnq.generator.baseLanguage.template.whereSwitch@generator)" />
   <dep model="r:6e017586-202a-472d-a15e-b121d3d5f881(webr.templateLanguage.generator.baseLanguage.template.clientSideController@generator)" />
@@ -79,6 +89,7 @@
   <dep model="r:a1bacbfe-74ae-47d8-b0bc-032492822c87(jetbrains.mps.baseLanguage.stateMachine.generator.baseLanguage.template.main@generator)" />
   <dep model="r:a4cd9c51-9503-4ba7-a788-ac31735f6e8d(jetbrains.mps.webr.rss.generator.baseLanguage.template.main@generator)" />
   <dep model="r:a9fb75fb-3213-4d80-9ce3-4006bd5a2cf3(webr.webl.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:b18c17ba-9db3-4b03-86c2-ed2134003e6c(jetbrains.teamsys.dnq.runtime.events)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:c71b740e-a20d-4190-9688-0f8df932da4d(jetbrains.mps.baseLanguage.tuples.generator.template.main@generator)" />
   <dep model="r:c77dd57b-4c8a-44d4-96fd-f9d733e0426a(jetbrains.mps.webr.htmlComponent.generator.template.widgets@generator)" />
@@ -95,10 +106,11 @@
   <dep model="r:fb4d7ed1-62c1-4848-aa19-9e2868b26b00(jetbrains.mps.webr.runtime.requestProcessor)" />
   <dep model="r:fc337701-fb1d-4053-a06a-bbeb799c7298(jetbrains.springframework.configuration.schema)" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
-  <common hash="2yck5ivaysq87on2bd8tit471acribn">
+  <common hash="-cfg7a2azzkomwozw5w3oh3vcs8lstiq">
     <dep root="3674256961799722359" />
     <dep root="3674256961799747906" />
     <dep root="3674256961799747926" />
+    <dep root="7149857847599063517" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
@@ -182,10 +194,11 @@
     <file name="web.xml" />
     <file name="webConfiguration.xml" />
   </source>
-  <source id="3674256961799722359" name="MessageBoard_RootHtmlTemplate" hash="-anwca48lj4dowqn7hqsu7xlv9tl20gh">
+  <source id="3674256961799722359" name="MessageBoard_RootHtmlTemplate" hash="-bi3fo1oyudiwo3nv3xb04x1a69gp7g1">
     <dep root="3674256961799747906" />
     <dep root="3674256961799747914" />
     <dep root="3674256961799747926" />
+    <dep root="7149857847599063517" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -201,6 +214,7 @@
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590576(jetbrains.mps.gtext.generator.baseLanguage.template.main@generator)" />
@@ -244,11 +258,12 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <dep model="r:f747134d-3e72-43d5-a3a0-9d670c6c0f8f(webr.templateLanguageInternal.generator.baseLanguage.template.main@generator)" />
     <dep model="r:fb4d7ed1-62c1-4848-aa19-9e2868b26b00(jetbrains.mps.webr.runtime.requestProcessor)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <file name="MessageBoard_RootHtmlTemplateComponent.java" />
     <file name="MessageBoard_RootHtmlTemplateController.java" />
     <file name="MessageBoard_RootHtmlTemplateFactory.java" />
   </source>
-  <source id="3674256961799747906" name="Board_HtmlTemplate" hash="deywebpf8xm142ylzdi5p7z75f2z30t">
+  <source id="3674256961799747906" name="Board_HtmlTemplate" hash="-4fjjimb4vzwrj6xh3zxl9lsgr6c4jkg">
     <dep root="3674256961799747914" />
     <dep root="3674256961799747926" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
@@ -314,6 +329,67 @@
     <dep model="r:df5f5b90-1f17-4b3e-9eff-e9d5dddb2357(webr.javascript.dhtml)" />
     <dep model="r:f7db357f-9a37-485f-978d-fb7f38d33d88(jetbrains.mps.webr.htmlComponent.js)" />
     <file name="MessageBoard.js" />
+  </source>
+  <source id="7149857847599037325" name="exodus" hash="h0ghfjqti04p3ueal83heqti9v3qfj">
+    <dep model="f:java_stub#0bb13644-7e3f-4ed2-bea5-4425e3e12c0a#com.jetbrains.teamsys.dnq.database(jetbrains.teamsys.dnq.runtime/com.jetbrains.teamsys.dnq.database@java_stub)" />
+    <dep model="f:java_stub#de575869-2fd0-4777-ac70-81137b5e3b2b#jetbrains.exodus.env(jetbrains.exodus/jetbrains.exodus.env@java_stub)" />
+    <dep model="f:java_stub#e37a52fb-2509-48e9-b975-4564e1187eca#jetbrains.exodus.entitystore(jetbrains.dnq.persistentEntityStore/jetbrains.exodus.entitystore@java_stub)" />
+    <dep model="f:java_stub#e37a52fb-2509-48e9-b975-4564e1187eca#jetbrains.exodus.entitystore.metadata(jetbrains.dnq.persistentEntityStore/jetbrains.exodus.entitystore.metadata@java_stub)" />
+    <dep model="f:java_stub#fa115847-fdba-421e-90f4-a3e3b9d3c372#jetbrains.exodus.entitystore.metadata(jetbrains.teamsys.dnq.openAPI/jetbrains.exodus.entitystore.metadata@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590529(jetbrains.springframework.configuration.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590576(jetbrains.mps.gtext.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590580(jetbrains.mps.baseLanguage.logging.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590589(jetbrains.mps.xml.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590592(jetbrains.mps.xmlInternal.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:267873f5-f81d-4ad4-85c1-5538b9254de1(jetbrains.teamsys.dnq.runtime.queries)" />
+    <dep model="r:5335ed30-2fc9-4a96-b5b1-29521b82a8e0(jetbrains.teamsys.dnq.generator.baseLanguage.template.persistentClassAccess@generator)" />
+    <dep model="r:5769c35a-2da5-47f2-873e-c9226162d463(jetbrains.teamsys.dnq.configSchema)" />
+    <dep model="r:b18c17ba-9db3-4b03-86c2-ed2134003e6c(jetbrains.teamsys.dnq.runtime.events)" />
+    <dep model="r:fc337701-fb1d-4053-a06a-bbeb799c7298(jetbrains.springframework.configuration.schema)" />
+    <file name="InitModelMetaDataServiceLocatorListener.java" />
+    <file name="modelMetaDataConfiguration.xml" />
+    <file name="storeConfigurationDatabase.xml" />
+  </source>
+  <source id="7149857847599063517" name="Main_Layout" hash="-6hguvkg4jaiwcyv7lonloaihruxbb59">
+    <dep root="3674256961799747906" />
+    <dep root="3674256961799747914" />
+    <dep root="3674256961799747926" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#705e2c7a-7da6-4732-bc64-762a7b10ac4a#javax.servlet.http(javax.servlet.api-3.0/javax.servlet.http@java_stub)" />
+    <dep model="f:java_stub#7a915f26-abf1-4709-86db-7e01c8f27411#webr.framework.textBuilder(jetbrains.mps.webr.runtime/webr.framework.textBuilder@java_stub)" />
+    <dep model="f:java_stub#7a915f26-abf1-4709-86db-7e01c8f27411#webr.framework.url(jetbrains.mps.webr.runtime/webr.framework.url@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590576(jetbrains.mps.gtext.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590580(jetbrains.mps.baseLanguage.logging.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590589(jetbrains.mps.xml.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590592(jetbrains.mps.xmlInternal.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:0464a8da-e5e5-4cea-b341-9a434e5abf7a(jetbrains.mps.webr.runtime.js)" />
+    <dep model="r:0e4a1d80-dae7-44e7-8376-e648fc8ac876(jetbrains.mps.webr.baseTemplate.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:11f20562-e7cb-4eac-894a-461fa691a073(webr.templateLanguage.accessoryModel)" />
+    <dep model="r:1773d365-6692-4940-84a5-a678462b1f6f(jetbrains.mps.gtext.runtime)" />
+    <dep model="r:2640c275-a368-46f3-a373-5d2a33037200(jetbrains.mps.webr.runtime.templateComponent)" />
+    <dep model="r:27206aae-969f-4c27-a941-ec1e4cf57738(webr.javascript.generator.baseLanguage.template.classStep@generator)" />
+    <dep model="r:2a05f46d-aa86-4316-9295-80ff9bc870a5(webr.templateLanguage.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:2a71aaed-21c7-4624-8f79-2969ade37068(webr.javascript.global)" />
+    <dep model="r:359a61e9-f67c-46fc-bb8a-6be619ef2ffa(jetbrains.mps.webr.jquery)" />
+    <dep model="r:36362ef4-5e1d-4026-bd6e-d33fae3b8979(jetbrains.mps.webr.baseTemplateInternal.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:52b78949-f903-423d-b5fb-52b1172f3b42(webr.templateLanguage.generator.baseLanguage.template.weblStep@generator)" />
+    <dep model="r:7d4a22fc-f547-4195-8da5-b3e1720162dd(jetbrains.mps.webr.stateless.template.structure)" />
+    <dep model="r:7e42f0e6-c386-46e4-b63f-79baf17ee3a0(jetbrains.mps.webr.javascriptInternal.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:9ff47c86-e8e8-4f39-89b8-bd89b2994685(jetbrains.mps.webr.dxml.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:a1bacbfe-74ae-47d8-b0bc-032492822c87(jetbrains.mps.baseLanguage.stateMachine.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:a9fb75fb-3213-4d80-9ce3-4006bd5a2cf3(webr.webl.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:c71b740e-a20d-4190-9688-0f8df932da4d(jetbrains.mps.baseLanguage.tuples.generator.template.main@generator)" />
+    <dep model="r:cbe6c65c-b2a6-4722-88b0-628e422c0a62(webr.javascript.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:da6483b0-ff12-4b51-a8d8-a0f7e08483f2(webr.templateLanguage.structure)" />
+    <dep model="r:f747134d-3e72-43d5-a3a0-9d670c6c0f8f(webr.templateLanguageInternal.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:fb4d7ed1-62c1-4848-aa19-9e2868b26b00(jetbrains.mps.webr.runtime.requestProcessor)" />
+    <file name="Main_LayoutComponent.java" />
   </source>
 </dependencies>
 

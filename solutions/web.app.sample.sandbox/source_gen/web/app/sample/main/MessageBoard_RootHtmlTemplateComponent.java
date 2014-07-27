@@ -7,6 +7,7 @@ import java.util.Map;
 import jetbrains.mps.webr.runtime.templateComponent.TemplateActionController;
 import jetbrains.mps.webr.runtime.templateComponent.TemplateEventHandler;
 import webr.framework.textBuilder.TBuilderContext;
+import jetbrains.mps.internal.collections.runtime.MapSequence;
 import jetbrains.exodus.util.StringHashMap;
 import jetbrains.mps.webr.htmlComponent.runtime.HtmlComponentUtil;
 import webr.framework.function.HtmlStringUtil;
@@ -68,6 +69,10 @@ public class MessageBoard_RootHtmlTemplateComponent extends TemplateComponent {
   protected void initTemplateProperties() {
     this.username = "Anonymous";
 
+  }
+
+  public void fillLayoutParameters(Map<String, Object> templateParameters, TBuilderContext builderContext) {
+    MapSequence.fromMap(templateParameters).put("title", "Message Board");
   }
 
   protected void renderTemplate(Map<String, Object> rootMap, final TBuilderContext builderContext) {
@@ -267,7 +272,7 @@ public class MessageBoard_RootHtmlTemplateComponent extends TemplateComponent {
   }
 
   public void saveMessage() {
-    if (isEmpty_etss2z_a0a0e(username)) {
+    if (isEmpty_etss2z_a0a0f(username)) {
       MessageBoard_RootHtmlTemplateComponent.this.addCommandResponse(ResponseFactory.getJsResponseFactory().getEvalResponse(ContentBuilder.toString(new _FunctionTypes._void_P1_E0<TBuilderContext>() {
         public void invoke(TBuilderContext builderContext) {
           builderContext.appendIndent();
@@ -299,7 +304,7 @@ public class MessageBoard_RootHtmlTemplateComponent extends TemplateComponent {
     }
   }
 
-  public static boolean isEmpty_etss2z_a0a0e(String str) {
+  public static boolean isEmpty_etss2z_a0a0f(String str) {
     return str == null || str.length() == 0;
   }
 }

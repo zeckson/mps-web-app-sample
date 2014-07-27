@@ -9,6 +9,10 @@ import jetbrains.mps.webr.runtime.templateComponent.TemplateActionController;
 import jetbrains.mps.webr.runtime.templateComponent.ActionFactory;
 import jetbrains.mps.webr.runtime.templateComponent.TemplateComponent;
 import webr.framework.textBuilder.TBuilderContext;
+import java.util.Map;
+import jetbrains.mps.internal.collections.runtime.MapSequence;
+import java.util.HashMap;
+import jetbrains.mps.webr.runtime.templateComponent.LayoutComponent;
 
 public class MessageBoard_RootHtmlTemplateController extends RootTemplateController {
   public MessageBoard_RootHtmlTemplateController() {
@@ -30,11 +34,19 @@ public class MessageBoard_RootHtmlTemplateController extends RootTemplateControl
       String rootTemplateName = "MessageBoard";
       rootTemplateName = StringUtils.substring(rootTemplateName, 0, 1).toUpperCase();
       builderContext.setCurrentTemplateName(rootTemplateName);
-      TemplateComponent templateComponent = new MessageBoard_RootHtmlTemplateComponent(this, rootTemplateName, null);
+      //  start layout
+      Map<String, Object> templateParameters = MapSequence.fromMap(new HashMap<String, Object>());
+      LayoutComponent layoutComponent = new Main_LayoutComponent(this, templateParameters);
+      layoutComponent.setRefName(layoutComponent.getTemplateName());
+      builderContext.setCurrentLayoutName("Main");
+      //  end layout
+      TemplateComponent templateComponent = new MessageBoard_RootHtmlTemplateComponent(this, layoutComponent, rootTemplateName, null);
+      layoutComponent.setNestedTemplateComponent(templateComponent);
       templateComponent.setRefName(rootTemplateName);
       builderContext.pushCurrentTemplateComponent(templateComponent);
+      templateComponent.fillTemplateParameters(templateParameters, builderContext);
       builderContext.popCurrentTemplateComponent();
-      return templateComponent;
+      return layoutComponent;
     }
   }
 }
