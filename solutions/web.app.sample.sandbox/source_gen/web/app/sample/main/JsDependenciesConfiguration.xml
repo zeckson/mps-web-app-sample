@@ -1,0 +1,24 @@
+<beans>
+  <bean id="web.app.sample.main.MessageBoard" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>web.app.sample.main.MessageBoard</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>web/app/sample/main/MessageBoard.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.ServerEvent</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+</beans>

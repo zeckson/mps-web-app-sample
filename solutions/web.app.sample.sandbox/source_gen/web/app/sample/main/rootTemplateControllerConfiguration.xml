@@ -1,0 +1,7 @@
+<beans>
+  <bean id="web.app.sample.main.MessageBoard_RootHtmlTemplateController" class="web.app.sample.main.MessageBoard_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

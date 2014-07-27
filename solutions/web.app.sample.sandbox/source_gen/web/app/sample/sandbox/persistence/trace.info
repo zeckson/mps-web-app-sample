@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="entityMetaDataConfiguration.xml" startLine="1" startPosition="0" endLine="135" endPosition="8" unitName="entityMetaDataConfiguration.xml" />
+  <root nodeId="3674256961799735806" modelId="r:9f4316a1-4bc9-4691-b28a-19b434b5a6b9(web.app.sample.sandbox.persistence)">
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="9" startPosition="58" endLine="10" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="__ENTITY_TYPE__" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="15" startPosition="21" endLine="16" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="19" startPosition="60" endLine="20" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="20" startPosition="24" endLine="21" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="21" startPosition="46" endLine="22" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="25" startPosition="38" endLine="26" endPosition="116" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="11" startPosition="0" endLine="13" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MessageImpl#()V" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="14" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="constructor#()Ljetbrains/exodus/entitystore/Entity;" />
+    <nodeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="18" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="_constructor#(Ljava/lang/String;)Ljetbrains/exodus/entitystore/Entity;" />
+    <scopeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="12" startPosition="24" endLine="12" endPosition="24" />
+    <scopeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="15" startPosition="21" endLine="16" endPosition="63" />
+    <scopeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="25" startPosition="38" endLine="26" endPosition="116" />
+    <scopeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="11" startPosition="0" endLine="13" endPosition="3" />
+    <scopeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="19" startPosition="60" endLine="22" endPosition="18">
+      <varInfo nodeId="3674256961799735806" varName="entity" />
+    </scopeInfo>
+    <scopeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="14" startPosition="0" endLine="18" endPosition="0" />
+    <scopeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="18" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="3674256961799735806" varName="_entityType_" />
+    </scopeInfo>
+    <unitInfo nodeId="3674256961799735806" fileName="MessageImpl.java" startLine="9" startPosition="0" endLine="29" endPosition="0" unitName="web.app.sample.sandbox.persistence.MessageImpl" />
+  </root>
+  <root nodeId="3674256961799735808" modelId="r:9f4316a1-4bc9-4691-b28a-19b434b5a6b9(web.app.sample.sandbox.persistence)">
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="10" startPosition="55" endLine="11" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="__ENTITY_TYPE__" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="16" startPosition="21" endLine="17" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="20" startPosition="77" endLine="21" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="21" startPosition="24" endLine="22" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3674256961799751002" fileName="UserImpl.java" startLine="22" startPosition="46" endLine="23" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="23" startPosition="78" endLine="24" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="27" startPosition="53" endLine="28" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="12" startPosition="0" endLine="14" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="UserImpl#()V" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="15" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="constructor#(Ljava/lang/String;)Ljetbrains/exodus/entitystore/Entity;" />
+    <nodeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="19" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="_constructor#(Ljava/lang/String;Ljava/lang/String;)Ljetbrains/exodus/entitystore/Entity;" />
+    <scopeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="13" startPosition="21" endLine="13" endPosition="21" />
+    <scopeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="16" startPosition="21" endLine="17" endPosition="63" />
+    <scopeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="27" startPosition="53" endLine="28" endPosition="123" />
+    <scopeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="12" startPosition="0" endLine="14" endPosition="3" />
+    <scopeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="15" startPosition="0" endLine="19" endPosition="0" />
+    <scopeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="20" startPosition="77" endLine="24" endPosition="18">
+      <varInfo nodeId="3674256961799735808" varName="entity" />
+    </scopeInfo>
+    <scopeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="3674256961799751000" varName="username" />
+    </scopeInfo>
+    <scopeInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="19" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="3674256961799735808" varName="_entityType_" />
+      <varInfo nodeId="3674256961799751000" varName="username" />
+    </scopeInfo>
+    <unitInfo nodeId="3674256961799735808" fileName="UserImpl.java" startLine="10" startPosition="0" endLine="31" endPosition="0" unitName="web.app.sample.sandbox.persistence.UserImpl" />
+  </root>
+</debugInfo>
+

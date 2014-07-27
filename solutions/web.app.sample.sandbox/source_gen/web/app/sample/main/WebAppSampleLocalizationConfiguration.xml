@@ -1,0 +1,10 @@
+<beans>
+  <bean id="localizer" class="jetbrains.mps.internationalization.runtime.Localizer">
+    <property name="resourceManager">
+      <ref bean="localizationResourceManager"/>
+    </property>
+    <property name="messagesContainer">
+      <ref bean="messagesContainer"/>
+    </property>
+  </bean>
+</beans>

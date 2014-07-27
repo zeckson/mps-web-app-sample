@@ -1,0 +1,1 @@
+cr.setTemplateBind("MessageBoard",function(b){cr.ach(b,"sendButton","click",function(a){if(0===cr.findInHandler(a,".message",[]).value.length)return window.alert("Cannot send empty message"),!1;cr.serverMethodCallInHandler(a,".methodCall_saveMessage",{},{collectFormElements:!0,preventDoubleSubmit:!0})})});

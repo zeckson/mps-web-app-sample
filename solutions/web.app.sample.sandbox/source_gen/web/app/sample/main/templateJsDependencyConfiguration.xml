@@ -1,0 +1,44 @@
+<beans>
+  <bean class="jetbrains.mps.webr.runtime.templateComponent.TemplateDependency">
+    <property name="className">
+      <value>web.app.sample.main.MessageBoard_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="factoryClassName">
+      <value>web.app.sample.main.MessageBoard_RootHtmlTemplateFactory</value>
+    </property>
+    <property name="name">
+      <value>MessageBoard</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>web.app.sample.main.Board_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>board</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="dependencies">
+      <list>
+        <value>web.app.sample.main.MessageBoard</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.runtime.templateComponent.TemplateDependency">
+    <property name="className">
+      <value>web.app.sample.main.Board_HtmlTemplateComponent</value>
+    </property>
+    <property name="factoryClassName">
+      <value>web.app.sample.main.Board_HtmlTemplateFactory</value>
+    </property>
+    <property name="name">
+      <value>Board</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,135 @@
+<beans>
+  <bean scope="prototype" id="web.app.sample.sandbox.persistence.MessageMetaData" class="jetbrains.exodus.entitystore.metadata.EntityMetaDataImpl">
+    <property name="initializer">
+      <bean scope="prototype" class="web.app.sample.sandbox.persistence.MessageImpl"></bean>
+    </property>
+    <property name="type">
+      <value>Message</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean scope="prototype" class="jetbrains.exodus.entitystore.metadata.PropertyMetaDataImpl">
+          <property name="name">
+            <value>author</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean scope="prototype" class="jetbrains.exodus.entitystore.metadata.SimplePropertyMetaDataImpl">
+          <property name="name">
+            <value>content</value>
+          </property>
+          <property name="type">
+            <value>TEXT</value>
+          </property>
+          <property name="primitiveTypeName">
+            <value>string</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="web.app.sample.sandbox.persistence.Message.author"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>content</value>
+      </list>
+    </property>
+  </bean>
+  <bean scope="prototype" id="web.app.sample.sandbox.persistence.UserMetaData" class="jetbrains.exodus.entitystore.metadata.EntityMetaDataImpl">
+    <property name="initializer">
+      <bean scope="prototype" class="web.app.sample.sandbox.persistence.UserImpl"></bean>
+    </property>
+    <property name="type">
+      <value>User</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean scope="prototype" class="jetbrains.exodus.entitystore.metadata.IndexImpl">
+          <property name="ownerEnityType">
+            <value>User</value>
+          </property>
+          <property name="fields">
+            <list>
+              <bean scope="prototype" class="jetbrains.exodus.entitystore.metadata.IndexFieldImpl">
+                <property name="name">
+                  <value>name</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean scope="prototype" class="jetbrains.exodus.entitystore.metadata.SimplePropertyMetaDataImpl">
+          <property name="name">
+            <value>name</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+          <property name="primitiveTypeName">
+            <value>string</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>name</value>
+      </list>
+    </property>
+  </bean>
+  <bean scope="prototype" id="web.app.sample.sandbox.persistence.Message.author" class="jetbrains.exodus.entitystore.metadata.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaDataName">
+      <value>Message.author-User</value>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="oppositeEntityMetaDataType">
+      <value>User</value>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>author</value>
+    </property>
+  </bean>
+  <bean scope="prototype" id="Message.author-User" class="jetbrains.exodus.entitystore.metadata.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+    <property name="fullName">
+      <value>Message.author-User</value>
+    </property>
+  </bean>
+</beans>

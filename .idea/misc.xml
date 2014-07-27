@@ -6,6 +6,20 @@
     </projectModules>
     <genConfs />
   </component>
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="webr-dnq">
+          <value>
+            <Library>
+              <option name="name" value="webr-dnq" />
+              <option name="path" value="${project}/web-app-sample/deps/webr-dnq" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" />
   <component name="ProjectVersion">
     <option name="version" value="2.5" />

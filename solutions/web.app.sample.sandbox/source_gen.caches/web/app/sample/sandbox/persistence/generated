@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="-3gglx2armsxi1ob6pqnvou0lj5g6f0">
+  <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+  <dep model="f:java_stub#e37a52fb-2509-48e9-b975-4564e1187eca#jetbrains.exodus.entitystore.metadata(jetbrains.dnq.persistentEntityStore/jetbrains.exodus.entitystore.metadata@java_stub)" />
+  <dep model="f:java_stub#fa115847-fdba-421e-90f4-a3e3b9d3c372#jetbrains.exodus.entitystore(jetbrains.teamsys.dnq.openAPI/jetbrains.exodus.entitystore@java_stub)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+  <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590529(jetbrains.springframework.configuration.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590576(jetbrains.mps.gtext.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590589(jetbrains.mps.xml.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590592(jetbrains.mps.xmlInternal.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:3912e62d-2f1d-4fb6-b1cc-ba785fbd9573(jetbrains.teamsys.dnq.generator.baseLanguage.template.primitiveAssociations@generator)" />
+  <dep model="r:45000d24-3601-442a-a1e1-b26727c8fcdc(jetbrains.teamsys.dnq.structure)" />
+  <dep model="r:5335ed30-2fc9-4a96-b5b1-29521b82a8e0(jetbrains.teamsys.dnq.generator.baseLanguage.template.persistentClassAccess@generator)" />
+  <dep model="r:a1bacbfe-74ae-47d8-b0bc-032492822c87(jetbrains.mps.baseLanguage.stateMachine.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  <dep model="r:bd386c37-a43d-49c1-a94e-a359e1171f0b(jetbrains.teamsys.dnq.generator.baseLanguage.template.stateMachine@generator)" />
+  <dep model="r:c71b740e-a20d-4190-9688-0f8df932da4d(jetbrains.mps.baseLanguage.tuples.generator.template.main@generator)" />
+  <dep model="r:fc337701-fb1d-4053-a06a-bbeb799c7298(jetbrains.springframework.configuration.schema)" />
+  <common hash="cu22590tv96lwbyhju7becte1tuxx8p">
+    <dep root="3674256961799735806" />
+    <dep root="3674256961799735808" />
+    <dep model="f:java_stub#e37a52fb-2509-48e9-b975-4564e1187eca#jetbrains.exodus.entitystore.metadata(jetbrains.dnq.persistentEntityStore/jetbrains.exodus.entitystore.metadata@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590529(jetbrains.springframework.configuration.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590576(jetbrains.mps.gtext.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590589(jetbrains.mps.xml.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590592(jetbrains.mps.xmlInternal.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:45000d24-3601-442a-a1e1-b26727c8fcdc(jetbrains.teamsys.dnq.structure)" />
+    <dep model="r:5335ed30-2fc9-4a96-b5b1-29521b82a8e0(jetbrains.teamsys.dnq.generator.baseLanguage.template.persistentClassAccess@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:fc337701-fb1d-4053-a06a-bbeb799c7298(jetbrains.springframework.configuration.schema)" />
+    <file name="entityMetaDataConfiguration.xml" />
+  </common>
+  <source id="3674256961799735806" name="Message" hash="2mtumurwbvvtout376bdyxjx4ibn648">
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:45000d24-3601-442a-a1e1-b26727c8fcdc(jetbrains.teamsys.dnq.structure)" />
+    <dep model="r:5335ed30-2fc9-4a96-b5b1-29521b82a8e0(jetbrains.teamsys.dnq.generator.baseLanguage.template.persistentClassAccess@generator)" />
+    <dep model="r:a1bacbfe-74ae-47d8-b0bc-032492822c87(jetbrains.mps.baseLanguage.stateMachine.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:bd386c37-a43d-49c1-a94e-a359e1171f0b(jetbrains.teamsys.dnq.generator.baseLanguage.template.stateMachine@generator)" />
+    <dep model="r:c71b740e-a20d-4190-9688-0f8df932da4d(jetbrains.mps.baseLanguage.tuples.generator.template.main@generator)" />
+    <file name="MessageImpl.java" />
+  </source>
+  <source id="3674256961799735808" name="User" hash="-2jzifmk2ev9qhtnazlpd09prfbjorzw">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#fa115847-fdba-421e-90f4-a3e3b9d3c372#jetbrains.exodus.entitystore(jetbrains.teamsys.dnq.openAPI/jetbrains.exodus.entitystore@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:3912e62d-2f1d-4fb6-b1cc-ba785fbd9573(jetbrains.teamsys.dnq.generator.baseLanguage.template.primitiveAssociations@generator)" />
+    <dep model="r:45000d24-3601-442a-a1e1-b26727c8fcdc(jetbrains.teamsys.dnq.structure)" />
+    <dep model="r:5335ed30-2fc9-4a96-b5b1-29521b82a8e0(jetbrains.teamsys.dnq.generator.baseLanguage.template.persistentClassAccess@generator)" />
+    <dep model="r:a1bacbfe-74ae-47d8-b0bc-032492822c87(jetbrains.mps.baseLanguage.stateMachine.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:bd386c37-a43d-49c1-a94e-a359e1171f0b(jetbrains.teamsys.dnq.generator.baseLanguage.template.stateMachine@generator)" />
+    <dep model="r:c71b740e-a20d-4190-9688-0f8df932da4d(jetbrains.mps.baseLanguage.tuples.generator.template.main@generator)" />
+    <file name="UserImpl.java" />
+  </source>
+</dependencies>
+

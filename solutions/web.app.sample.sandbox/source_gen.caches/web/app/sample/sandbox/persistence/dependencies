@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="web.app.sample.sandbox.persistence.MessageImpl" file="MessageImpl.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.exodus.entitystore.Entity" />
+    <classNode dependClassName="jetbrains.teamsys.dnq.runtime.util.DnqUtils" />
+    <classNode extendsClassName="com.jetbrains.teamsys.dnq.database.BasePersistentClassImpl" />
+  </dependency>
+  <dependency className="web.app.sample.sandbox.persistence.UserImpl" file="UserImpl.java">
+    <classNode dependClassName="com.jetbrains.teamsys.dnq.association.PrimitiveAssociationSemantics" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.exodus.entitystore.Entity" />
+    <classNode dependClassName="jetbrains.teamsys.dnq.runtime.util.DnqUtils" />
+    <classNode extendsClassName="com.jetbrains.teamsys.dnq.database.BasePersistentClassImpl" />
+  </dependency>
+  <dependency className="web.app.sample.sandbox.persistence.entityMetaDataConfiguration" file="entityMetaDataConfiguration.xml" />
+</dependenciesRoot>
+

@@ -1,0 +1,65 @@
+<beans>
+  <bean id="centralManager" class="webr.framework.controller.CentralManager">
+    <property name="requestProcessors">
+      <ref bean="requestProcessorContainer"/>
+    </property>
+    <property name="applicationName">
+      <value>WebAppSample</value>
+    </property>
+    <property name="freemarkerConfiguration">
+      <bean id="freemarkerConfiguration" class="freemarker.template.Configuration">
+        <property name="objectWrapper">
+          <ref bean="myDefaultObjectWrapper"/>
+        </property>
+      </bean>
+    </property>
+    <property name="usingStaticHtml">
+      <value>false</value>
+    </property>
+    <property name="sessionVariableInitializers">
+      <map></map>
+    </property>
+    <property name="typeConvertManager">
+      <ref bean="typeConvertManager"/>
+    </property>
+    <property name="debugMode">
+      <value>false</value>
+    </property>
+    <property name="appicationVersion">
+      <value>1.0.0</value>
+    </property>
+    <property name="appicationBuild">
+      <value>@developmentVersion@</value>
+    </property>
+  </bean>
+  <bean id="initWebApplication" class="web.app.sample.main.InitWebApplicationServiceLocatorListener">
+    <property name="dependees">
+      <list>
+        <value>initModelMetaData</value>
+        <value>addTextIndexListener</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="templateActionControllerTimer" class="webr.framework.controller.BeanContainerAwareSingleThreadDelegatingJobProcessor">
+    <constructor-arg index="0">
+      <value>templateActionControllerTimer</value>
+    </constructor-arg>
+    <constructor-arg index="1">
+      <value>false</value>
+    </constructor-arg>
+  </bean>
+  <bean id="webrSessionListener" class="jetbrains.mps.webr.runtime.session.WebrSessionListenerImpl">
+    <constructor-arg index="0">
+      <value>false</value>
+    </constructor-arg>
+  </bean>
+  <bean id="fileUploadParams" class="jetbrains.mps.webr.runtime.requestProcessor.FileUploadParams"></bean>
+  <bean id="hostToBaseUrlConfiguration" class="webr.framework.url.HostToBaseUrlConfiguration">
+    <property name="hostToBaseUrlMapping">
+      <map></map>
+    </property>
+    <property name="defaultBaseUrl">
+      <value>http://localhost:8080</value>
+    </property>
+  </bean>
+</beans>
