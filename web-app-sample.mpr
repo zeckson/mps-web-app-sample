@@ -25,6 +25,37 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" />
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="web.app.sample.sandbox" type="WebrApplicationType" factoryName="WebrApplication">
+      <MyState>
+        <option name="myJavaRunParameters">
+          <ConfigRunParameters>
+            <option name="VMParameters" />
+            <option name="alternativeJRE" />
+            <option name="make" value="true" />
+            <option name="programParameters" />
+            <option name="useAlternativeJRE" value="false" />
+            <option name="workingDirectory" />
+          </ConfigRunParameters>
+        </option>
+        <option name="parameters">
+          <WebrRunParameters>
+            <option name="browserOpenedOnStart" value="false" />
+            <option name="contextPath" />
+            <option name="host" value="localhost" />
+            <option name="log4jUrl" value="jetbrains/mps/webr/webServer/runtime/remote/log4j.xml" />
+            <option name="rootTemplateModelId" />
+            <option name="rootTemplateNodeId" />
+            <option name="solutionId" value="75969650-1723-4b9f-99fb-38b5a5abeccb" />
+            <option name="webServerPort" value="8080" />
+          </WebrRunParameters>
+        </option>
+      </MyState>
+      <RunnerSettings RunnerId="Default Runner" />
+      <ConfigurationWrapper RunnerId="Default Runner" />
+      <method />
+    </configuration>
+  </component>
   <component name="ProjectVersion">
     <option name="version" value="2.5" />
   </component>
